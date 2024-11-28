@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensagem Escondida</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #1a1919;
+            color: #eedddd;
+            text-align: center;
+        }
+        #secreta {
+            display: none;
+            margin-top: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #1a1919;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .botao {
+            padding: 10px 20px;
+            background-color: #ff0400;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .botao:hover {
+            background-color: #f44607;
+        }
+    </style>
+</head>
+<body>
+    <h1>Coloca a pass para leres</h1>
+    <p>DICA: Onde eu me declarei para ti, e é uma só palavra.</p>
+    <input type="password" id="senha" placeholder="Escreve a senha" />
+    <button class="botao" onclick="verificarSenha()">Ler</button>
+    <p>(escreve tudo em letra pequena)</p>
+    <p>ATENÇÃO! Com isto não espero que voltemos a falar como antes, ou até a falar sequer, só quero que saibas que peço desculpa.</p>
+
+    <div id="secreta">
+        <h2>Isto é privado, peço que não mostres nem partilhes com ninguém.</h2>
+        <p>Primeiramente queria te dizer obrigado, obrigado por parares para ler isto, não sei se é para aumentares o teu ego por passado 2 anos eu ainda pensar em ti, ou porque se realmente queres saber o porquê do meu contacto repentino, bem de qualquer forma obrigado.</p>
+        <p>Segundamente isto NÃO é para te tentar separar do Antony, nunca foi, mas tu sempre pensaste isso, eu só parei de falar com vocês para que vocês não achassem que eu queria isso.</p>
+
+        <p>Falando agora sobre o pedido de desculpas em si… quando tu e o Antony começaram a namorar isso mexeu bastante comigo nem vou repetir o porquê porque esse não é o foco, mas isso mexeu, libertou o meu lado infantil, na altura eu não reparei nisso, mas agora eu vejo, eu tava a fazer birrinha por tu o preferires a ele e não a mim. Então eu pensei que merecesses um pedido de desculpas por causa disso, mas tu mudaste de casa, eu bloqueei-te em todo lado e seria estranho mandar-te mensagem ou marcar de nos encontrarmos em algum lugar, então eu criei este site (porque isso não é nada estranho, e se achas que és tás errada) e estou agora a pedir-te desculpas. Nestes dois anos por tua causa eu tive um pouco ausente da minha própria mente, sempre tentando manter as aparências, mas nunca em mim mesmo, todos os dias eu pensava em ti, eu tornei-me no pior tipo de homem, o que usa mulher para esquecer mulher, por um momento eu pensei que realmente poderia seguir com a Ana, mas parece que não (ela fazia merda, não vou dizer o quê por ser coisas privadas, mas ela fazia sim, e eu também, só o facto de ainda pensar em ti já é), posso estar a fazer muita merda a confiar em ti, podes espalhar isto por todo o lado, mas não faças isso, já vou tarde eu sei mas tou a tentar arranjar as coisas o q eu pensava em ti era principalmente pelos erros, pela forma como paramos de falar, que merda eu a agir como criança mimada e tu a dizeres que eu tava a tentar acabar com o teu relacionamento. Então eu tou a tentar reparar isso e a fazer o meu trabalho, porque quando foi para fazer a merda também o fiz. Então é isso.</p>
+
+         <p>DESCULPA POR TER AGIDO QUE NEM CANALHA</p>
+
+         <p>Mas atenção, não me entendas errado, de nós dois eu fui o primeiro a fazer merda mas não o único, também acho que mereço um pedido de desculpas vindo de ti. (e outro do Antony, mas com ele eu nem quero conversa, pelo menos por enquanto, quando eu achar que está na hora faço outro site ahahah) então agora sou também o primeiro a pedir desculpas.</p>
+
+         <p>Ah, e uma última coisa, se precisares sabes onde me podes encontrar e estás desbloqueada em todas as redes sociais. Agora eu não te incomodo mais, se tu quiseres esta é a última vez que vês algo meu, mas se não quiseres, vês sempre que quiseres tu decides, eu não tenho direito a opinar. Mas depois diz-me se desculpas ou não, vale muito para mim.</p>
+
+    </div>
+
+    <script>
+        function verificarSenha() {
+            const senhaCorreta = "minecraft"; // Substitua "1234" pela senha que você deseja
+            const senhaDigitada = document.getElementById("senha").value;
+
+            if (senhaDigitada === senhaCorreta) {
+                document.getElementById("secreta").style.display = "block";
+            } else {
+                alert("ERRADA!");
+            }
+        }
+    </script>
+</body>
+</html>
